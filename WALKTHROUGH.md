@@ -14,7 +14,7 @@ Issues and features grouped by priority; I have not added any potential improvem
 #### Blockers
 These are correctness or readability issues that can cause loss of trust. We want to make sure these are addressed first;
 
-- [ ] Inconsistent date format (`2026-05-10` vs `May 8, 2026`);
+- [x] Inconsistent date format (`2026-05-10` vs `May 8, 2026`);
     - Make sure to make date consistent across the app.
 - [ ] Inconsistent currency format `$24,531.18` `$2500.00`;
     - Make sure to make currency consistent across the app.
