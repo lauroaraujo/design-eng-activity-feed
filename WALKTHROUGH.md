@@ -18,8 +18,9 @@ These are correctness or readability issues that can cause loss of trust. We wan
     - Make sure to make date consistent across the app.
 - [x] Inconsistent currency format `$24,531.18` `$2500.00`;
     - Make sure to make currency consistent across the app.
-- [ ] Transactions list UI is hard to read; Items are too close to each other;
+- [x] Transactions list UI is hard to read; Items are too close to each other;
     - Potentially large work that may be broken down into multiple steps;
+- [ ] Transaction status is inconsistent (only PENDING shows up) and is hard to read
 
 #### High Priority
 These are accessibility and performance issues along with high priority feature work.
@@ -41,6 +42,7 @@ Issues in the "polish" category;
     - This may be confused with a broken page. Needs visual indication that the list is empty (at least a message).
 - [ ] Update currency formatter to allow `+` sign to be displayed.
     - Transaction UIs usually display `+` signs and omit `-` signs since negative values are more common.
+- [ ] Overhaul Transactions List
 - [ ] Loading state (out-of-scope, lowest priority)
 - [ ] Error state (out-of-scope, lowest priority)
 
@@ -59,3 +61,11 @@ on the date format problem I decided against it. Logged as "Medium Priority" ite
 
 Tentative updates include displaying the `+` sign instead of the `-` sign since income is more rare to show
 up in transactions and color coding positive values.
+
+### Transactions list UI is hard to read
+Due to time constraints we only made small improvements to the transactions list UI. These ensure the readability criteria I defined as a blocker. There's still a lot of room for improvement, so I added "Overhaul Transactions List" to the "Medium Priority" list.
+
+I have also found another issue that I added to tbe blocker list: the `status` field does not display consistently.
+Only `pending` shows up (and not in a good place); While we may want to suppress the `posted` status (most transactions),
+the `failed` status is being completely omitted and that's incorrect information being displayed.
+
