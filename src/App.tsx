@@ -11,6 +11,7 @@ import {
 } from './data/transactions'
 import { getFeedStateFromUrl, setFeedStateInUrl } from './feedState'
 import './App.css'
+import { formatCurrency } from './common/format/currencyFormat'
 
 function getInitialTransactions(state: FeedState) {
   if (state === 'empty') return []
@@ -68,7 +69,7 @@ function App() {
         <header className="app-header">
           <p className="app-header__eyebrow">Business checking</p>
           <h1 className="app-header__title">Operating account</h1>
-          <p className="app-header__balance">$24,531.18</p>
+          <p className="app-header__balance">{formatCurrency(24531.18)}</p>
         </header>
 
         <main className="app-main">
