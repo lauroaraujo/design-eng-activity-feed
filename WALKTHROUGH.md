@@ -20,7 +20,7 @@ These are correctness or readability issues that can cause loss of trust. We wan
     - Make sure to make currency consistent across the app.
 - [x] Transactions list UI is hard to read; Items are too close to each other;
     - Potentially large work that may be broken down into multiple steps;
-- [ ] Transaction status is inconsistent (only PENDING shows up) and is hard to read
+- [x] Transaction status is inconsistent (only PENDING shows up) and is hard to read
 
 #### High Priority
 These are accessibility and performance issues along with high priority feature work.
@@ -68,4 +68,9 @@ Due to time constraints we only made small improvements to the transactions list
 I have also found another issue that I added to tbe blocker list: the `status` field does not display consistently.
 Only `pending` shows up (and not in a good place); While we may want to suppress the `posted` status (most transactions),
 the `failed` status is being completely omitted and that's incorrect information being displayed.
+
+### Transaction status is inconsistent
+Created a `StatusPill` component that encapsulates the status logic and displays it as a pill;
+
+Moved the position of the status - it's now displayed beside the merchant name;
 
