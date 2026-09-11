@@ -1,0 +1,114 @@
+.transaction-details {
+  width: min(480px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #1a1a1a;
+}
+
+.transaction-details::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+.transaction-details__content {
+  padding: 20px 24px 24px;
+}
+
+.transaction-details__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.transaction-details__heading {
+  min-width: 0;
+}
+
+.transaction-details__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.transaction-details__amount {
+  margin: 4px 0 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.transaction-details__close {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #4b5563;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.transaction-details__close:hover {
+  background: #f3f4f6;
+}
+
+.transaction-details__failure {
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.transaction-details__field {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.transaction-details__field:last-child {
+  border-bottom: none;
+}
+
+.transaction-details__label {
+  color: #4b5563;
+}
+
+.transaction-details__value {
+  overflow-wrap: anywhere;
+}
+
+.transaction-details__empty {
+  color: #6b7280;
+}
+
+.transaction-details__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.transaction-details__dispute {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.transaction-details__dispute:hover {
+  background: #f3f4f6;
+}

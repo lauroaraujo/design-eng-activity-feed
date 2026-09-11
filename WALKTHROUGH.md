@@ -31,9 +31,9 @@ These are accessibility and performance issues along with high priority feature 
 - [ ] Potential performance issues with large lists;
     - [ ] Investigate impact and potential solutions;
     - [ ] Implement improvements
-- [ ] (new feature) Transaction Detail view;
+- [x] (new feature) Transaction Detail view;
     - Since the dispute flow is out of scope, the `Dispute` button will be included in the main Transaction Detail view work;
-    - Ensure the
+    - Missing accessibility and responsiveness
 
 #### Medium Priority
 Issues in the "polish" category;
@@ -74,4 +74,11 @@ the `failed` status is being completely omitted and that's incorrect information
 Created a `StatusPill` component that encapsulates the status logic and displays it as a pill;
 
 Moved the position of the status - it's now displayed beside the merchant name;
+
+### Transaction Detail view
+A modal was the fastest to implement that would still show a reasonable result and I didn't want to leave this view out of the assignment as it was required.
+
+Created a quick modal that shows all fields, the Dispute button (clicking shows an alert) and banner for the `failureReason`;
+
+No accessibility was added to this or the rest of the app yet, but it's all on the roadmap.
 
