@@ -1,0 +1,21 @@
+.status-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+/* #374151 on #e5e7eb: ~8.3:1 */
+.status-pill--pending {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* #991b1b on #fee2e2: ~6.8:1 */
+.status-pill--failed {
+  background: #fee2e2;
+  color: #991b1b;
+}

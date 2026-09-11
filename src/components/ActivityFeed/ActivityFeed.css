@@ -37,6 +37,8 @@
 }
 
 .transaction-row__merchant {
+  display: flex;
+  gap: 8px;
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
@@ -57,10 +59,4 @@
 .transaction-row__amount {
   font-size: 16px;
   font-weight: 500;
-}
-
-.transaction-row__status {
-  width: 100%;
-  font-size: 16px;
-  text-transform: uppercase;
 }
