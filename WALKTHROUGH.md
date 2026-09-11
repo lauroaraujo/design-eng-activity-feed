@@ -38,6 +38,7 @@ These are accessibility and performance issues along with high priority feature 
 #### Medium Priority
 Issues in the "polish" category;
 
+- [ ] Truncate fields (merchant, category);
 - [ ] Empty list shows only heading;
     - This may be confused with a broken page. Needs visual indication that the list is empty (at least a message).
 - [ ] Update currency formatter to allow `+` sign to be displayed.
