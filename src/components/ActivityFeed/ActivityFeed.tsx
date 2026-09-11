@@ -1,5 +1,6 @@
 import './ActivityFeed.css';
 import type { Transaction } from '../../types/transaction';
+import { formatDate } from '../../common/format/dateFormat';
 
 type ActivityFeedProps = {
   transactions: Transaction[];
@@ -27,7 +28,7 @@ export function ActivityFeed({ transactions }: ActivityFeedProps) {
           </div>
 
           <div className='transaction-row__aside'>
-            <div className='transaction-row__date'>{transaction.date}</div>
+            <div className='transaction-row__date'>{formatDate(transaction.date)}</div>
             <div className='transaction-row__amount'>{formatAmount(transaction.amount)}</div>
           </div>
 
